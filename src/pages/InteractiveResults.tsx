@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import PageSection from "../components/Pagesection";
+import { ShinyIframeSlot } from "../components/ShinyIframeProvider";
 
 export default function InteractiveResults() {
   return (
@@ -19,15 +20,7 @@ export default function InteractiveResults() {
 
         <Card title="Interactive Shiny App">
           <div className="rounded-xl border-2 border-neutral-200 bg-white overflow-hidden">
-            <iframe
-              src="https://arsearchwebsites.shinyapps.io/arsearchwebsite/"
-              width="100%"
-              height="800px"
-              frameBorder="0"
-              title="Interactive Results - Meta-Analysis on Extended Realities"
-              className="w-full"
-              style={{ minHeight: '800px' }}
-            />
+            <ShinyIframeSlot className="w-full min-h-[800px]" />
           </div>
           <div className="mt-4 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
             <p className="text-sm text-blue-900">
