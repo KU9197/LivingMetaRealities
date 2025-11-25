@@ -22,7 +22,7 @@ export default function Data() {
               href="#"
               download
             >
-              💾 Download main dataset
+              Download main dataset
             </a>
             <a 
               className="inline-flex items-center gap-2 rounded-full bg-[#E4EDFF] border border-neutral-200 px-6 py-3 text-sm font-semibold text-neutral-900 hover:bg-[#d4dcef] transition-all duration-200 shadow-md hover:shadow-lg" 
@@ -30,7 +30,7 @@ export default function Data() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              📊 View all data and code
+              View all data and code
             </a>
           </div>
         </Card>
