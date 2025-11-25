@@ -37,6 +37,107 @@ export default function Data() {
       </PageSection>
 
       <div className="grid gap-6 lg:grid-cols-2">
+        <Card title="Descriptive Statistics">
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-neutral-300">
+                  <th className="text-left py-3 px-4 font-semibold text-neutral-900">Metric</th>
+                  <th className="text-right py-3 px-4 font-semibold text-neutral-900">Value</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-neutral-200">
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Number of Papers</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">86</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Number of Studies</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">115</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Number of Effect Sizes</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">299</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Publication Year Range</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">2002–2025</td>
+                </tr>
+
+                <tr className="bg-neutral-50">
+                  <td colSpan={2} className="py-3 px-4 text-neutral-800 font-medium">
+                    Number of papers by academic field
+                  </td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Business/Management</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">21</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Information Systems</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">27</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Marketing</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">38</td>
+                </tr>
+
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Number of Different Journals</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">52</td>
+                </tr>
+
+                <tr className="bg-neutral-50">
+                  <td colSpan={2} className="py-3 px-4 text-neutral-800 font-medium">
+                    Number of papers by publication type
+                  </td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Conference abstract</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">1</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Dissertation</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">5</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Journal paper</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">79</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Working paper</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">1</td>
+                </tr>
+
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Total Sample Size</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">19,883</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Sample size range (min. – max.)</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">28–1,514</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Median Sample Size</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">127</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Number of Countries</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">21</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Mean effect size (Cohen's d)</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">0.42</td>
+                </tr>
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">SD Effect Size</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">0.46</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </Card>
+
         <Card title="Information on Dataset">
           <div className="space-y-3">
             {/* Question 1 */}
@@ -133,59 +234,6 @@ export default function Data() {
                 </div>
               )}
             </div>
-          </div>
-        </Card>
-
-        <Card title="Descriptive Statistics">
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b-2 border-neutral-300">
-                  <th className="text-left py-3 px-4 font-semibold text-neutral-900">Metric</th>
-                  <th className="text-right py-3 px-4 font-semibold text-neutral-900">Value</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-neutral-200">
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Number of Papers</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">115</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Number of Studies</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">—</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Number of Effect Sizes</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">299</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Total Participants</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">—</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Publication Year Range</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">2002-2025</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Mean Effect Size (Cohen's d)</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">0.41</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Effect Size Range</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">—</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">XR Types Covered</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">AR, VR, 3D</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div className="mt-4 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
-            <p className="text-sm text-blue-900">
-              Update the values marked with "—" as you have more detailed data available.
-            </p>
           </div>
         </Card>
       </div>

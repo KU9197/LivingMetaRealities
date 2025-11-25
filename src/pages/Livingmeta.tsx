@@ -23,37 +23,20 @@ export default function LivingMeta() {
 
         <Card title="Google forms or Qualtrics Survey">
           <div className="space-y-4">
-            <div className="bg-neutral-50 rounded-lg border-2 border-neutral-200 p-8 min-h-[500px] flex items-center justify-center">
-              <div className="text-center space-y-4 max-w-lg">
-                <div className="text-6xl">📝</div>
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-2">
-                    Survey Form Placeholder
-                  </h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">
-                    Embed your Google Forms or Qualtrics survey here to collect new study data from contributors.
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-neutral-300 text-left">
-                  <p className="text-xs text-neutral-700 font-mono">
-                    {`<iframe\n  src="YOUR_SURVEY_URL"\n  width="100%"\n  height="500px"\n  frameBorder="0"\n/>`}
-                  </p>
-                </div>
-              </div>
+            <div className="bg-neutral-50 rounded-lg border-2 border-neutral-200 p-4 md:p-6">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfoJFMODryA50v43CWvS_XEglyG2KeUA6TeViJ1lv1cnWKGyw/viewform?embedded=true"
+                width="100%"
+                height="645"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                title="Living Meta Realities Submission Form"
+                className="w-full rounded-lg bg-white"
+              >
+                Loading…
+              </iframe>
             </div>
-            
-            {/* Uncomment and add your survey URL when ready:
-            <iframe
-              src="YOUR_GOOGLE_FORMS_OR_QUALTRICS_URL_HERE"
-              width="100%"
-              height="800px"
-              frameBorder="0"
-              title="Living Meta-Analysis Submission Form"
-              className="rounded-lg"
-            >
-              Loading…
-            </iframe>
-            */}
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
               <p className="text-sm text-blue-900">
