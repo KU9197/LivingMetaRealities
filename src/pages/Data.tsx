@@ -16,7 +16,7 @@ export default function Data() {
         subtitle=""
       >
         <Card>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a 
               className="inline-flex items-center gap-2 rounded-full bg-[#E4EDFF] border border-neutral-200 px-6 py-3 text-sm font-semibold text-neutral-900 hover:bg-[#d4dcef] transition-all duration-200 shadow-md hover:shadow-lg" 
               href="#"
@@ -49,15 +49,15 @@ export default function Data() {
               <tbody className="divide-y divide-neutral-200">
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Number of Papers</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">86</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">82</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Number of Studies</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">115</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">111</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Number of Effect Sizes</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">299</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">298</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Publication Year Range</td>
@@ -71,11 +71,11 @@ export default function Data() {
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-2 pl-8 pr-4 text-neutral-700">Business/Management</td>
-                  <td className="py-2 px-4 text-right font-medium text-neutral-900">21</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">18</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-2 pl-8 pr-4 text-neutral-700">Information Systems</td>
-                  <td className="py-2 px-4 text-right font-medium text-neutral-900">27</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">26</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-2 pl-8 pr-4 text-neutral-700">Marketing</td>
@@ -84,7 +84,7 @@ export default function Data() {
 
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Number of Different Journals</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">52</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">49</td>
                 </tr>
 
                 <tr className="bg-neutral-50">
@@ -102,7 +102,7 @@ export default function Data() {
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-2 pl-8 pr-4 text-neutral-700">Journal paper</td>
-                  <td className="py-2 px-4 text-right font-medium text-neutral-900">79</td>
+                  <td className="py-2 px-4 text-right font-medium text-neutral-900">75</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-2 pl-8 pr-4 text-neutral-700">Working paper</td>
@@ -111,7 +111,7 @@ export default function Data() {
 
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Total Sample Size</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">19,883</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">19,075</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Sample size range (min. – max.)</td>
@@ -119,27 +119,22 @@ export default function Data() {
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Median Sample Size</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">127</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">125</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700">Number of Countries</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">21</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">20</td>
                 </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Mean effect size (Cohen's d)</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">0.42</td>
-                </tr>
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">SD Effect Size</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">0.46</td>
-                </tr>
+                
+                
               </tbody>
             </table>
           </div>
         </Card>
 
-        <Card title="Information on Dataset">
-          <div className="space-y-3">
+        <div className="h-fit self-start">
+          <Card title="Information on Dataset">
+            <div className="space-y-3">
             {/* Question 1 */}
             <div className="border border-neutral-200 rounded-lg overflow-hidden">
               <button
@@ -193,12 +188,12 @@ export default function Data() {
               {openInfo === 1 && (
                 <div className="px-4 py-3 bg-neutral-50 border-t border-neutral-200">
                   <ul className="text-sm text-neutral-700 space-y-1">
-                    <li>IDp = "Paper ID"</li>
-                    <li>IDd = "Study ID"</li>
-                    <li>IDES = "Effect size ID"</li>
-                    <li>ESRAW = "Raw effect size (Cohen's d)"</li>
-                    <li>ES_VAR = "Variance of effect size"</li>
-                    <li>ES_Sample = "Sample size of effect size"</li>
+                    <li>IDp = Paper ID</li>
+                    <li>IDd = Study ID</li>
+                    <li>IDES = Effect size ID</li>
+                    <li>ESRAW = Raw effect size (Cohen's d or Pearson correlation)</li>
+                    <li>ES_VAR = Variance of effect size</li>
+                    <li>ES_Sample = Sample size of effect size</li>
                   </ul>
                 </div>
               )}
@@ -227,15 +222,14 @@ export default function Data() {
               {openInfo === 2 && (
                 <div className="px-4 py-3 bg-neutral-50 border-t border-neutral-200">
                   <p className="text-sm text-neutral-700 leading-relaxed">
-                    The dataset contains: 1) effect sizes and their variances for the impact of XRs on consumer responses, and 2) all variables of the theoretical moderators 
-                    (e.g., type of XRs, brand familiarity, etc.) and methodological controls (e.g., paper and study characteristics). 
-                    For the data of the meta-SEM please visit our OSF page clicking "view all data and code" above.
+                    The main dataset contains all experimental studies reported in the main analyses in our manuscript. Specifically: 1) effect sizes and their variances for the impact of XRs on consumer responses, and 2) all variables of the theoretical moderators (e.g., type of XRs, brand familiarity, etc.) and methodological controls (e.g., paper and study characteristics). For the data of the correlational studies and the meta-SEM please visit our OSF page clicking "view all data and code" above.
                   </p>
                 </div>
               )}
             </div>
           </div>
-        </Card>
+          </Card>
+        </div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function App() {
           {/* Page Title */}
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-[#000000] tracking-tight">
-              Living Meta-Analysis on Extended Realities (XRs) in E-Commerce
+              Living Meta-Analysis on Extended Realities (XRs) in Online Retailing
             </h1>
           </div>
           
@@ -35,7 +35,7 @@ export default function App() {
           </Routes>
           <footer className="mt-12 py-8 text-center border-t border-neutral-200">
             <p className="text-sm text-neutral-500">
-              © {new Date().getFullYear()} • Living Meta-Analysis on Extended Realities (XRs) in E-Commerce
+              © {new Date().getFullYear()} • Living Meta-Analysis on Extended Realities (XRs) in Online Retailing
             </p>
           </footer>
         </main>

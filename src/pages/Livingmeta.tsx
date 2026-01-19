@@ -8,7 +8,7 @@ export default function LivingMeta() {
         title=""
         subtitle=""
       >
-        <Card>
+        <Card title="Living Meta-Analysis">
           <div className="space-y-4 text-neutral-700">
             <p className="leading-relaxed">
               We developed this living meta-analysis tool to keep our meta-analysis constantly updated. 
@@ -21,7 +21,7 @@ export default function LivingMeta() {
           </div>
         </Card>
 
-        <Card title="Google forms or Qualtrics Survey">
+        <Card>
           <div className="space-y-4">
             <div className="bg-neutral-50 rounded-lg border-2 border-neutral-200 p-4 md:p-6">
               <iframe
