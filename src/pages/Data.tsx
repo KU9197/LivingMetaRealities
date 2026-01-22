@@ -3,10 +3,18 @@ import Card from "../components/Card";
 import PageSection from "../components/Pagesection";
 
 export default function Data() {
-  const [openInfo, setOpenInfo] = useState<number | null>(null);
+  const [openInfo, setOpenInfo] = useState<Set<number>>(new Set());
 
   const toggleInfo = (index: number) => {
-    setOpenInfo(openInfo === index ? null : index);
+    setOpenInfo(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
   };
 
   return (
@@ -19,8 +27,8 @@ export default function Data() {
           <div className="flex flex-wrap gap-4 justify-center">
             <a 
               className="inline-flex items-center gap-2 rounded-full bg-[#E4EDFF] border border-neutral-200 px-6 py-3 text-sm font-semibold text-neutral-900 hover:bg-[#d4dcef] transition-all duration-200 shadow-md hover:shadow-lg" 
-              href="#"
-              download
+              href="/dataset/Dataset_MainNEW.xlsx"
+              download="DatasetMain.xlsx"
             >
               Download main dataset
             </a>
@@ -146,7 +154,7 @@ export default function Data() {
                 </h4>
                 <svg
                   className={`w-4 h-4 text-neutral-600 transition-transform duration-200 flex-shrink-0 ml-3 ${
-                    openInfo === 0 ? "rotate-180" : ""
+                    openInfo.has(0) ? "rotate-180" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -155,7 +163,7 @@ export default function Data() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              {openInfo === 0 && (
+              {openInfo.has(0) && (
                 <div className="px-4 py-3 bg-neutral-50 border-t border-neutral-200">
                   <p className="text-sm text-neutral-700 leading-relaxed">
                     Each row of the dataset represents an individual effect size. The effect sizes are nested within studies which are part of an overall paper. 
@@ -176,7 +184,7 @@ export default function Data() {
                 </h4>
                 <svg
                   className={`w-4 h-4 text-neutral-600 transition-transform duration-200 flex-shrink-0 ml-3 ${
-                    openInfo === 1 ? "rotate-180" : ""
+                    openInfo.has(1) ? "rotate-180" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -185,7 +193,7 @@ export default function Data() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              {openInfo === 1 && (
+              {openInfo.has(1) && (
                 <div className="px-4 py-3 bg-neutral-50 border-t border-neutral-200">
                   <ul className="text-sm text-neutral-700 space-y-1">
                     <li>IDp = Paper ID</li>
@@ -210,7 +218,7 @@ export default function Data() {
                 </h4>
                 <svg
                   className={`w-4 h-4 text-neutral-600 transition-transform duration-200 flex-shrink-0 ml-3 ${
-                    openInfo === 2 ? "rotate-180" : ""
+                    openInfo.has(2) ? "rotate-180" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -219,7 +227,7 @@ export default function Data() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              {openInfo === 2 && (
+              {openInfo.has(2) && (
                 <div className="px-4 py-3 bg-neutral-50 border-t border-neutral-200">
                   <p className="text-sm text-neutral-700 leading-relaxed">
                     The main dataset contains all experimental studies reported in the main analyses in our manuscript. Specifically: 1) effect sizes and their variances for the impact of XRs on consumer responses, and 2) all variables of the theoretical moderators (e.g., type of XRs, brand familiarity, etc.) and methodological controls (e.g., paper and study characteristics). For the data of the correlational studies and the meta-SEM please visit our OSF page clicking "view all data and code" above.

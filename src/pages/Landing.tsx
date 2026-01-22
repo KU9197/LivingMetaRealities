@@ -3,10 +3,18 @@ import Card from "../components/Card";
 import PageSection from "../components/Pagesection";
 
 export default function Landing() {
-  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
+  const [openQuestion, setOpenQuestion] = useState<Set<number>>(new Set());
 
   const toggleQuestion = (index: number) => {
-    setOpenQuestion(openQuestion === index ? null : index);
+    setOpenQuestion(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
   };
 
   // Overview "effect size" mini-scale (matches paper summary styling)
@@ -34,8 +42,8 @@ export default function Landing() {
         </Card>
       </PageSection>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="lg:col-span-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+        <div className="lg:col-span-1 flex">
           <Card title="Key Research Questions & Findings">
             <div className="space-y-3">
               {/* Question 1 */}
@@ -49,7 +57,7 @@ export default function Landing() {
                   </h3>
                   <svg
                     className={`w-5 h-5 text-neutral-600 transition-transform duration-200 flex-shrink-0 ml-3 ${
-                      openQuestion === 0 ? "rotate-180" : ""
+                      openQuestion.has(0) ? "rotate-180" : ""
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -58,7 +66,7 @@ export default function Landing() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                {openQuestion === 0 && (
+                {openQuestion.has(0) && (
                   <div className="px-5 py-4 bg-neutral-50 border-t border-neutral-200">
                     <div className="bg-white rounded-lg p-6 border border-neutral-200">
                       <div className="mb-4">
@@ -126,7 +134,7 @@ export default function Landing() {
                   </h3>
                   <svg
                     className={`w-5 h-5 text-neutral-600 transition-transform duration-200 flex-shrink-0 ml-3 ${
-                      openQuestion === 1 ? "rotate-180" : ""
+                      openQuestion.has(1) ? "rotate-180" : ""
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -135,7 +143,7 @@ export default function Landing() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                {openQuestion === 1 && (
+                {openQuestion.has(1) && (
                   <div className="px-5 py-4 bg-neutral-50 border-t border-neutral-200">
                     <div className="text-neutral-700 space-y-2">
                       <p>XRs <strong>increase mental simulation</strong> and <strong>allow for information assessment</strong>.</p>
@@ -156,7 +164,7 @@ export default function Landing() {
                   </h3>
                   <svg
                     className={`w-5 h-5 text-neutral-600 transition-transform duration-200 flex-shrink-0 ml-3 ${
-                      openQuestion === 2 ? "rotate-180" : ""
+                      openQuestion.has(2) ? "rotate-180" : ""
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -165,7 +173,7 @@ export default function Landing() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                {openQuestion === 2 && (
+                {openQuestion.has(2) && (
                   <div className="px-5 py-4 bg-neutral-50 border-t border-neutral-200">
                     <div className="text-neutral-700 space-y-2">
                     <p><span className="text-green-600 font-semibold">Factors strengthening effect:</span> including overlay elements, targeting experiential shoppers</p>
@@ -179,19 +187,18 @@ export default function Landing() {
           </Card>
         </div>
 
-        <div className="lg:col-span-1">
+        <div className="lg:col-span-1 flex">
           <Card title="Engage With Our Research">
             <div className="space-y-4">
               <div className="space-y-3">
-                <a
-                  className="group flex items-center gap-3 text-base font-medium text-neutral-900 hover:text-neutral-600 transition-colors"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  className="group flex items-center gap-3 text-base font-medium text-neutral-900 hover:text-neutral-600 transition-colors cursor-not-allowed opacity-60"
+                  disabled
+                  aria-label="Read the paper (link coming soon)"
                 >
                   <span className="text-lg text-neutral-400 group-hover:text-neutral-600 transition-colors">➔</span>
                   Read the paper
-                </a>
+                </button>
                 <a
                   className="group flex items-center gap-3 text-base font-medium text-neutral-900 hover:text-neutral-600 transition-colors"
                   href="https://osf.io/nt9hv/?view_only=4f25bbfbe08e47afb1e931e2c4f3e0d7"
