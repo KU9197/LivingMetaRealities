@@ -14,6 +14,9 @@ export default function InteractiveResults() {
             <p className="text-neutral-700 leading-relaxed">
               On this page you can explore our results in an interactive way, i.e., the main effects, our main moderator analyses, all subgroup analyses, interaction effects, and robustness checks. For the full results, please refer to our OSF page and the paper.
             </p>
+            <p className="text-neutral-700 leading-relaxed">
+              <strong>Note:</strong> The app may take several minutes to fully load. Please stay on this page until loading is complete.
+            </p>
           </div>
         </Card>
 
