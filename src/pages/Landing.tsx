@@ -33,7 +33,7 @@ export default function Landing() {
         <Card title="Overview">
           <div className="space-y-4">
             <p className="text-neutral-700 leading-relaxed">
-              This website contains interactive results and a living meta-analysis tool for the paper: <strong className="text-neutral-900">Getting Hands On(line)? A Meta-Analysis of the Effectiveness of Extended Realities in Online Retailing.</strong>
+              This website contains interactive results and a living meta-analysis tool for the paper: <strong className="text-neutral-900">Uhlendorf-Leo, K., Uhrich, S., & Völckner, F. (2026). Getting Hands On(line)? A Meta-Analysis of the Effectiveness of Extended Realities in Online Retailing. <italic>International Journal of Research in Marketing</italic>, Forthcoming</strong>
             </p>
             <p className="text-neutral-700 leading-relaxed">
               The paper's database comprises <strong>298 effect sizes</strong>, from <strong>111 studies</strong>, published between <strong>2002 and 2025</strong> for the effect of XRs (AR/VR/3D) on consumer responses. Feel free to explore our interactive results, access the data and code, or contribute new data to our meta-analysis!
@@ -188,17 +188,19 @@ export default function Landing() {
         </div>
 
         <div className="lg:col-span-1 flex">
-          <Card title="Engage With Our Research">
-            <div className="space-y-4">
-              <div className="space-y-3">
-                <button
-                  className="group flex items-center gap-3 text-base font-medium text-neutral-900 hover:text-neutral-600 transition-colors cursor-not-allowed opacity-60"
-                  disabled
-                  aria-label="Read the paper (link coming soon)"
-                >
-                  <span className="text-lg text-neutral-400 group-hover:text-neutral-600 transition-colors">➔</span>
-                  Read the paper
-                </button>
+  <Card title="Engage With Our Research">
+    <div className="space-y-4">
+      <div className="space-y-3">
+        <a
+          href="https://www.sciencedirect.com/science/article/pii/S0167811626000297"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center gap-3 text-base font-medium text-neutral-900 hover:text-neutral-600 transition-colors"
+          aria-label="Read the paper"
+        >
+          <span className="text-lg text-neutral-400 group-hover:text-neutral-600 transition-colors">➔</span>
+          Read the paper
+        </a>
                 <a
                   className="group flex items-center gap-3 text-base font-medium text-neutral-900 hover:text-neutral-600 transition-colors"
                   href="https://osf.io/nt9hv/?view_only=4f25bbfbe08e47afb1e931e2c4f3e0d7"
