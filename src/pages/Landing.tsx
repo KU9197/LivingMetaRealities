@@ -33,7 +33,7 @@ export default function Landing() {
         <Card title="Overview">
           <div className="space-y-4">
             <p className="text-neutral-700 leading-relaxed">
-              This website contains interactive results and a living meta-analysis tool for the paper: <strong className="text-neutral-900">Uhlendorf-Leo, K., Uhrich, S., & Völckner, F. (2026). Getting Hands On(line)? A Meta-Analysis of the Effectiveness of Extended Realities in Online Retailing. <italic>International Journal of Research in Marketing</italic>, Forthcoming</strong>
+              This website contains interactive results and a living meta-analysis tool for the paper: <strong className="text-neutral-900">Uhlendorf-Leo, K., Uhrich, S., & Völckner, F. (2026). Getting Hands On(line)? A Meta-Analysis of the Effectiveness of Extended Realities in Online Retailing. <em>International Journal of Research in Marketing</em>, Forthcoming</strong>
             </p>
             <p className="text-neutral-700 leading-relaxed">
               The paper's database comprises <strong>298 effect sizes</strong>, from <strong>111 studies</strong>, published between <strong>2002 and 2025</strong> for the effect of XRs (AR/VR/3D) on consumer responses. Feel free to explore our interactive results, access the data and code, or contribute new data to our meta-analysis!
