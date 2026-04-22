@@ -72,8 +72,8 @@ export default function Data() {
                   <td className="py-3 px-4 text-right font-medium text-neutral-900">2002–2025</td>
                 </tr>
 
-                <tr className="bg-neutral-50">
-                  <td colSpan={2} className="py-3 px-4 text-neutral-800 font-medium">
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-800 font-medium">
                     Number of papers by academic field
                   </td>
                 </tr>
@@ -95,8 +95,8 @@ export default function Data() {
                   <td className="py-3 px-4 text-right font-medium text-neutral-900">49</td>
                 </tr>
 
-                <tr className="bg-neutral-50">
-                  <td colSpan={2} className="py-3 px-4 text-neutral-800 font-medium">
+                <tr className="hover:bg-neutral-50 transition-colors0">
+                  <td className="py-3 px-4 text-neutral-800 font-medium">
                     Number of papers by publication type
                   </td>
                 </tr>
