@@ -79,7 +79,7 @@ export default function Data() {
 
                 <tr className="hover:bg-neutral-50 transition-colors">
                   <td className="py-3 px-4 text-neutral-700 font-normal">
-                    Number of papers by academic field
+                    Number of Papers by Academic Field
                   </td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
@@ -98,11 +98,11 @@ export default function Data() {
             
                 <tr className="hover:bg-neutral-50 transition-colors0">
                   <td className="py-3 px-4 text-neutral-700">
-                    Number of papers by publication type
+                    Number of Papers by Publication Type
                   </td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-2 pl-8 pr-4 text-neutral-700">Conference abstract</td>
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Conference Abstract</td>
                   <td className="py-2 px-4 text-right font-medium text-neutral-900">1</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
@@ -110,11 +110,11 @@ export default function Data() {
                   <td className="py-2 px-4 text-right font-medium text-neutral-900">5</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-2 pl-8 pr-4 text-neutral-700">Journal paper</td>
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Journal Paper</td>
                   <td className="py-2 px-4 text-right font-medium text-neutral-900">75</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-2 pl-8 pr-4 text-neutral-700">Working paper</td>
+                  <td className="py-2 pl-8 pr-4 text-neutral-700">Working Paper</td>
                   <td className="py-2 px-4 text-right font-medium text-neutral-900">1</td>
                 </tr>
 
@@ -123,7 +123,7 @@ export default function Data() {
                   <td className="py-3 px-4 text-right font-medium text-neutral-900">19,075</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Sample size range (min. – max.)</td>
+                  <td className="py-3 px-4 text-neutral-700">Sample Size Range (min. – max.)</td>
                   <td className="py-3 px-4 text-right font-medium text-neutral-900">28–1,514</td>
                 </tr>
                 <tr className="hover:bg-neutral-50 transition-colors">
