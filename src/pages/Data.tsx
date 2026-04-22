@@ -71,9 +71,14 @@ export default function Data() {
                   <td className="py-3 px-4 text-neutral-700">Publication Year Range</td>
                   <td className="py-3 px-4 text-right font-medium text-neutral-900">2002–2025</td>
                 </tr>
+                
+                <tr className="hover:bg-neutral-50 transition-colors">
+                  <td className="py-3 px-4 text-neutral-700">Number of Different Journals</td>
+                  <td className="py-3 px-4 text-right font-medium text-neutral-900">49</td>
+                </tr>
 
                 <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-800 font-medium">
+                  <td className="py-3 px-4 text-neutral-700 font-normal">
                     Number of papers by academic field
                   </td>
                 </tr>
@@ -90,13 +95,9 @@ export default function Data() {
                   <td className="py-2 px-4 text-right font-medium text-neutral-900">38</td>
                 </tr>
 
-                <tr className="hover:bg-neutral-50 transition-colors">
-                  <td className="py-3 px-4 text-neutral-700">Number of Different Journals</td>
-                  <td className="py-3 px-4 text-right font-medium text-neutral-900">49</td>
-                </tr>
-
+            
                 <tr className="hover:bg-neutral-50 transition-colors0">
-                  <td className="py-3 px-4 text-neutral-800 font-medium">
+                  <td className="py-3 px-4 text-neutral-700">
                     Number of papers by publication type
                   </td>
                 </tr>
